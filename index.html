@@ -55,7 +55,23 @@
             background: rgba(0, 0, 0, 0.5); /* Semi-transparent black background for readability */
         }
 
-        .highlight-gold::selection {
+    </style>
+</head>
+<body>
+
+    <!-- Video background -->
+    <div class="video-background">
+        <video muted autoplay loop>
+            <source src="white2.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+    <!-- Your content -->
+    <div class="content">
+
+      <style>
+
+      .highlight-gold::selection {
     background: gold;
     color: black;  /* Optional: it changes the text color when highlighted. */
 }
@@ -71,19 +87,12 @@
     background: gold;
     color: black;
 }
-    </style>
-</head>
-<body>
 
-    <!-- Video background -->
-    <div class="video-background">
-        <video muted autoplay loop>
-            <source src="white2.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-        </video>
-    </div>
-    <!-- Your content -->
-    <div class="content">
+
+
+
+      <style>
+        
 
 <!--   <body>
  -->
@@ -96,7 +105,7 @@
                 <p class="name" style="text-align: center;">
                   Patrick Tong
                 </p>
-                <p>I am a first-year graduate student at <a href="https://ai.google/research">VCAIL Lab</a>, <a href="https://maps.unc.edu/history/unc-museum/sitterson-hall/">UNC Chapel Hill</a>, where I work on Augmented Reality (AR) related technologies.
+                <p>I am a first-year graduate student at <a class="highlight-gold" href="https://ai.google/research">VCAIL Lab</a>, <a href="https://maps.unc.edu/history/unc-museum/sitterson-hall/">UNC Chapel Hill</a>, where I work on Augmented Reality (AR) related technologies.
                 </p>
                 <p>
                     My research objective centers on advancing effective AR/VR solutions. In the past, I concentrated on creating AR applications for surgical guidance and VR applications for training purposes. During college, I co-founded a startup that built cryptographic protocols for the metaverse. Looking ahead, my aim is to delve into the fundamental concepts of AR, including spatial audio and displays.
