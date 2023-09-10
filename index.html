@@ -55,6 +55,22 @@
             background: rgba(0, 0, 0, 0.5); /* Semi-transparent black background for readability */
         }
 
+        .highlight-gold::selection {
+    background: gold;
+    color: black;  /* Optional: it changes the text color when highlighted. */
+}
+
+/* For compatibility with WebKit browsers like Safari */
+.highlight-gold::-webkit-selection {
+    background: gold;
+    color: black;
+}
+
+/* For compatibility with Mozilla browsers like Firefox */
+.highlight-gold::-moz-selection {
+    background: gold;
+    color: black;
+}
     </style>
 </head>
 <body>
@@ -84,7 +100,7 @@
                 </p>
                 <p>
                     My research objective centers on advancing effective AR/VR solutions. In the past, I concentrated on creating AR applications for surgical guidance and VR applications for training purposes. During college, I co-founded a startup that built cryptographic protocols for the metaverse. Looking ahead, my aim is to delve into the fundamental concepts of AR, including spatial audio and displays.
-<p style="text-align:center">
+<p class="highlight-gold" style="text-align:center">
                   <a href="mailto:gtong@unc.edu">Email</a>  / 
                   <a href="https://scholar.google.com/citations?user=IvABIPkAAAAJ&hl=zh-CN">Google Scholar</a>  / 
                   <a href="https://github.com/patrick0701/">Github</a>
