@@ -68,8 +68,13 @@
   <body>
 
     <!-- Video background -->
-    <div class="video-background"></div>
-
+    <div class="video-background">
+        <div class="overlay"></div>
+        <video autoplay muted loop>
+            <source src="path_to_your_video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
     <!-- Your content -->
     <div class="content text-over-video">
 
