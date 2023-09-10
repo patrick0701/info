@@ -49,49 +49,57 @@
           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
           
     
-      <tr onmouseout="zipnerf_stop()" onmouseover="zipnerf_start()">
-        <td style="padding:20px;width:25%;vertical-align:middle">
-          <div class="one">
-            <div class="two" id="zipnerf_image" style="opacity: 0;"><video width="100%" height="100%" muted autoplay loop>
-    <!--<source src="media/zipnerf.mp4" type="video/mp4"> -->
-    Your browser does not support the video tag.
-</video></div>
-            <img src="images/surgery.jpg" width="160">
-          </div>
-<!--           <script type="text/javascript">
-            function zipnerf_start() {
-              document.getElementById('zipnerf_image').style.opacity = "1";
-            }
+<style>
+    .flex-container {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+    }
 
-            function zipnerf_stop() {
-              document.getElementById('zipnerf_image').style.opacity = "0";
-            }
-            zipnerf_stop()
-          </script> -->
-        </td>
-        <td style="padding:20px;width:75%;vertical-align:middle">
-            <a href="https://cmt3.research.microsoft.com/User/Login?ReturnUrl=%2FAECAI2023">
-                <span class="papertitle">
-                    Development of an Augmented Reality Guidance System for Head and Neck Cancer Resection
-                </span>
-            </a>
-            <br>
-            <strong>Guansen Tong</strong>,
-            <a>Jiayi Xu</a>,
-            <a>Michael Pfister</a>,
-            <a>Jumanh Atoum</a>,
-            <a>Kavita Prasad</a>,
-            <a>Alexis Miller</a>,
-            <a>Michael Topf</a>,
-            <a>Jie Ying Wu</a>
-            <br>
-            <em>(In Review) AECAI</em>, 2023
-            <br>
-            <p>
-                Exploring the feasibility of an AR guidance system for resections of positive tumor margins in a cadaveric specimen. Presenting an intraoperative solution that enables surgeons to upload and visualize holographic reconstructions of resected cadaver tissues.
-            </p>
-        </td>
-      </tr>
+    .flex-video-container {
+        position: relative;
+        width: 160px;
+        height: 160px;
+    }
+
+    .flex-video-container img, .flex-video-container video {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+</style>
+
+<tr onmouseout="zipnerf_stop()" onmouseover="zipnerf_start()">
+    <td style="padding:20px;width:25%;vertical-align:middle">
+        <div class="flex-container">
+            <div class="flex-video-container" id="zipnerf_image" style="opacity: 0;">
+                <video width="100%" height="100%" muted autoplay loop>
+                    <!--<source src="media/zipnerf.mp4" type="video/mp4"> -->
+                    Your browser does not support the video tag.
+                </video>
+                <img src="images/surgery.jpg" width="160">
+            </div>
+        </div>
+    </td>
+    <td style="padding:20px;width:75%;vertical-align:middle">
+        <a href="https://cmt3.research.microsoft.com/User/Login?ReturnUrl=%2FAECAI2023">
+            <span class="papertitle">
+                Development of an Augmented Reality Guidance System for Head and Neck Cancer Resection
+            </span>
+        </a>
+        <br>
+        <strong>Guansen Tong</strong>, <a>Jiayi Xu</a>, <a>Michael Pfister</a>, <a>Jumanh Atoum</a>, <a>Kavita Prasad</a>, <a>Alexis Miller</a>, <a>Michael Topf</a>, <a>Jie Ying Wu</a>
+        <br>
+        <em>(In Review) AECAI</em>, 2023
+        <br>
+        <p>
+            Exploring the feasibility of an AR guidance system for resections of positive tumor margins in a cadaveric specimen. Presenting an intraoperative solution that enables surgeons to upload and visualize holographic reconstructions of resected cadaver tissues.
+        </p>
+    </td>
+</tr>
       
       
       <tr onmouseout="db3d_stop()" onmouseover="db3d_start()">
