@@ -17,12 +17,14 @@
 
                 /* Style for the links */
     a {
-        color: #FFD700;  /* Color for regular links */
-        text-decoration: none;  /* Removes the underline from links */
+        color: #DAA520;
+        text-decoration: none; /* Removes the default underline from hyperlinks */
+        transition: color 0.3s ease; /* Smooth transition for color change */
     }
 
     a:hover {
-        color: #FFC400;  /* Slightly darker shade of gold for links on mouse hover */
+        color: #FFD700; /* A brighter shade of gold for hover */
+        text-decoration: underline; /* Adds underline when hovering for better user interaction */
     }
 
         /* Ensure the body takes full viewport */
